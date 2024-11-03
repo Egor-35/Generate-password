@@ -11,12 +11,16 @@ for _ in range(password_length):
 
 print("Сгенерированный пароль:", generated_password)
 
-generated_password = ""
+while True:
+    generated_password = ""
 
-pon=input("Вам понравился пароль Да или Нет: ")
+
+    pon=input("Вам понравился пароль Да или Нет: ")
 
 
-if pon=="Нет":
-    for _ in range(password_length):
-        generated_password += random.choice(symbols)
-    print("Новый сгенерированный пароль:", generated_password)
+    if pon=="Нет":
+        for _ in range(password_length):
+            generated_password += random.choice(symbols)
+        print("Новый сгенерированный пароль:", generated_password)
+    else:
+        break
