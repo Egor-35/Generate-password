@@ -14,9 +14,7 @@ print("Сгенерированный пароль:", generated_password)
 while True:
     generated_password = ""
 
-
     pon=input("Вам понравился пароль Да или Нет: ")
-
 
     if pon=="Нет":
         for _ in range(password_length):
